@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define SIZE 5
+typedefstruct PriorityQueue{
+    int element;
+    int priority;
+} PriorityQueue;
+PriorityQueue pq[SIZE];
+int front=-1 count=-1;
+int isEmpty(){
+return (front==-1)? 1:0;
+}
+int isFull(){
+return (count==SIZE-1) ? 1:0;
+}
+void enqueue(int data)
+{
+for(int i=0; i<=count; i++){
+if(int i=0;i<=count;i++){
+if(pq[i].priority<priority){
+for(int j=count;j>1;j--){
+pq[i+1]=pq[j];
+}
+pq[i].element=data;
+pq[i[.priority=priority;
+break;
+       }
+    }
+  }
+int dequeue(){
+int data=pq[front].element;
+if(front==count)
+   from=count=-1
+  else 
+       front++;
+return data;
+}
+int =peek(){ //front
+    return pq[front].element;
+}
+int display(){
+printf("Priority queue Elements are:\n");
+for (int i=front ; i<=count; i++){
+printf("element %d :priority %d\n",pq[1].element,pq[i].priority);
+   }`
+}
+int main(){
+while(1){
+printf("----priority Queue----\n");
